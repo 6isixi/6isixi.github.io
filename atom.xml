@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://lkurococ.top</id>
     <title>LKurococ</title>
-    <updated>2020-08-22T04:14:57.572Z</updated>
+    <updated>2020-08-22T04:17:21.295Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://lkurococ.top"/>
     <link rel="self" href="http://lkurococ.top/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>不是为了输赢，只是认真</subtitle>
     <logo>http://lkurococ.top/images/avatar.png</logo>
     <icon>http://lkurococ.top/favicon.ico</icon>
     <rights>All rights reserved 2020, LKurococ</rights>
