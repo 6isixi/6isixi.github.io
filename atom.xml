@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lkurococ.top</id>
     <title>LKurococ</title>
-    <updated>2020-08-23T12:14:33.874Z</updated>
+    <updated>2020-08-23T12:47:28.977Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lkurococ.top"/>
     <link rel="self" href="https://lkurococ.top/atom.xml"/>
@@ -11,18 +11,18 @@
     <icon>https://lkurococ.top/favicon.ico</icon>
     <rights>All rights reserved 2020, LKurococ</rights>
     <entry>
-        <title type="html"><![CDATA[Hello,World]]></title>
-        <id>https://lkurococ.top/post/HelloWorld/</id>
-        <link href="https://lkurococ.top/post/HelloWorld/">
+        <title type="html"><![CDATA[IDEA背景图]]></title>
+        <id>https://lkurococ.top/IDEA-Background/</id>
+        <link href="https://lkurococ.top/IDEA-Background/">
         </link>
-        <updated>2020-08-22T04:14:20.000Z</updated>
-        <content type="html"><![CDATA[<p>Hello,World.</p>
+        <updated>2020-08-23T12:45:58.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://lkurococ.top/post-images/1598186787032.jpg" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://lkurococ.top/post/hello-gridea/</id>
-        <link href="https://lkurococ.top/post/hello-gridea/">
+        <id>https://lkurococ.top/hello-gridea/</id>
+        <link href="https://lkurococ.top/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
