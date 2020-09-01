@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://lkurococ.top</id>
     <title>LKurococ</title>
-    <updated>2020-08-30T05:33:53.263Z</updated>
+    <updated>2020-09-01T16:15:52.528Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://lkurococ.top"/>
     <link rel="self" href="http://lkurococ.top/atom.xml"/>
@@ -10,6 +10,107 @@
     <logo>http://lkurococ.top/images/avatar.png</logo>
     <icon>http://lkurococ.top/favicon.ico</icon>
     <rights>All rights reserved 2020, LKurococ</rights>
+    <entry>
+        <title type="html"><![CDATA[Elementary OS折腾笔记]]></title>
+        <id>http://lkurococ.top/ElementaryOSNotes/</id>
+        <link href="http://lkurococ.top/ElementaryOSNotes/">
+        </link>
+        <updated>2020-09-01T15:55:23.000Z</updated>
+        <content type="html"><![CDATA[<p>#全局 su权限执行：<br>
+sudo su<br>
+#更新源：<br>
+sudo apt update<br>
+sudo apt install software-properties-common software-properties-gtk<br>
+打开软件更新管理器:<br>
+sudo software-properties-gtk<br>
+#更新apt列表：<br>
+sudo apt update<br>
+sudo apt-get update<br>
+#更新已安装apt包：<br>
+sudo apt upgrade<br>
+sudo apt-get upgrade<br>
+#换国内源 阿里源 网易163源 中科大源：<br>
+cd /etc/apt/<br>
+sudo cp sources.list sources.list.bak<br>
+sudo vim sources.list<br>
+或者<br>
+sudo vi sources.list</p>
+<p>阿里源：<br>
+deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse<br>
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse<br>
+deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse<br>
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse<br>
+deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse<br>
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse<br>
+deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse<br>
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse<br>
+deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse<br>
+网易源：<br>
+deb http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse<br>
+deb http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse<br>
+deb http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse<br>
+deb http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse<br>
+deb http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse<br>
+deb-src http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse<br>
+deb-src http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse<br>
+deb-src http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse<br>
+deb-src http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse<br>
+deb-src http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse<br>
+中科大：<br>
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse<br>
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse<br>
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse<br>
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse<br>
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse<br>
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse<br>
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse<br>
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse<br>
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse<br>
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse<br>
+ESC ：WQ保存执行更新apt</p>
+<p>#安装搜狗输入法：<br>
+sudo add-apt-repository ppa:fcitx-team/nightly<br>
+sudo apt-get update<br>
+http://pinyin.sogou.com/linux/下载安装包deb文件<br>
+sudo apt-get remove ibus   // 卸载ibus<br>
+sudo apt-get remove scim<br>
+sudo apt-get autoremove   // 删除依赖包<br>
+sudo apt-get -f install   // 修正安装过程中出现的依赖性关系<br>
+sudo apt-get install fcitx<br>
+sudo apt --fix-broken install<br>
+sudo apt-get update --fix missing<br>
+sudo apt-get -f install<br>
+sudo apt install fcitx-googlepinyin<br>
+sudo apt-get remove ibus scim<br>
+sudo im-config -s fcitx -z default<br>
+sudo reboot now<br>
+sudo dpkg -i sogoupinyin.dep</p>
+<p>#JDK安装：<br>
+yum -y list java*<br>
+选择一个版本：<br>
+yum install -y java-1.8.0-openjdk-devel.x86_64<br>
+查看版本：<br>
+java -version</p>
+<p>#安装idea：<br>
+https://www.jetbrains.com/idea/<br>
+cd /usr/local<br>
+mkdir intellij<br>
+cd /usr/local/intellij<br>
+tar –zxvf 包名<br>
+解压就能用了：<br>
+cd idea-IU-181.4203.550/bin<br>
+./idea.sh</p>
+<p>#更新汇总<br>
+sudo apt-get update &amp;&amp; sudo apt-get upgrade &amp;&amp; sudo apt-get dist-upgrade</p>
+<p>#安装elementary-tweaks<br>
+sudo apt install software-properties-common<br>
+sudo add-apt-repository ppa:philip.scott/elementary-tweaks<br>
+sudo apt install elementary-tweaks</p>
+<p>#grub配置timeout<br>
+sudo vim /etc/default/grub   #timeout改成3s<br>
+sudo update-grub</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>http://lkurococ.top/hello-gridea/</id>

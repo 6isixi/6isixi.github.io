@@ -42,32 +42,104 @@
         <main id="main" class="site-main" role="main">
             <article id="post-1270" class="post-1270 post type-post status-publish format-standard hentry category-90 category-129 tag-149">
                 <header class="entry-header">
-                    <h1 class="entry-title">Hello Gridea</h1>
-                    <p class="entry-census">发布于 2018-12-12</p>
+                    <h1 class="entry-title">Elementary OS折腾笔记</h1>
+                    <p class="entry-census">发布于 2020-09-01</p>
                     <hr>
                 </header>
                 <div class="neko">
-                    <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
+                    <p>#全局 su权限执行：<br>
+sudo su<br>
+#更新源：<br>
+sudo apt update<br>
+sudo apt install software-properties-common software-properties-gtk<br>
+打开软件更新管理器:<br>
+sudo software-properties-gtk<br>
+#更新apt列表：<br>
+sudo apt update<br>
+sudo apt-get update<br>
+#更新已安装apt包：<br>
+sudo apt upgrade<br>
+sudo apt-get upgrade<br>
+#换国内源 阿里源 网易163源 中科大源：<br>
+cd /etc/apt/<br>
+sudo cp sources.list sources.list.bak<br>
+sudo vim sources.list<br>
+或者<br>
+sudo vi sources.list</p>
+<p>阿里源：<br>
+deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse<br>
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse<br>
+deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse<br>
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse<br>
+deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse<br>
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse<br>
+deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse<br>
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse<br>
+deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse<br>
+网易源：<br>
+deb http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse<br>
+deb http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse<br>
+deb http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse<br>
+deb http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse<br>
+deb http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse<br>
+deb-src http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse<br>
+deb-src http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse<br>
+deb-src http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse<br>
+deb-src http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse<br>
+deb-src http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse<br>
+中科大：<br>
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse<br>
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse<br>
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse<br>
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse<br>
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse<br>
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse<br>
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse<br>
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse<br>
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse<br>
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse<br>
+ESC ：WQ保存执行更新apt</p>
+<p>#安装搜狗输入法：<br>
+sudo add-apt-repository ppa:fcitx-team/nightly<br>
+sudo apt-get update<br>
+http://pinyin.sogou.com/linux/下载安装包deb文件<br>
+sudo apt-get remove ibus   // 卸载ibus<br>
+sudo apt-get remove scim<br>
+sudo apt-get autoremove   // 删除依赖包<br>
+sudo apt-get -f install   // 修正安装过程中出现的依赖性关系<br>
+sudo apt-get install fcitx<br>
+sudo apt --fix-broken install<br>
+sudo apt-get update --fix missing<br>
+sudo apt-get -f install<br>
+sudo apt install fcitx-googlepinyin<br>
+sudo apt-get remove ibus scim<br>
+sudo im-config -s fcitx -z default<br>
+sudo reboot now<br>
+sudo dpkg -i sogoupinyin.dep</p>
+<p>#JDK安装：<br>
+yum -y list java*<br>
+选择一个版本：<br>
+yum install -y java-1.8.0-openjdk-devel.x86_64<br>
+查看版本：<br>
+java -version</p>
+<p>#安装idea：<br>
+https://www.jetbrains.com/idea/<br>
+cd /usr/local<br>
+mkdir intellij<br>
+cd /usr/local/intellij<br>
+tar –zxvf 包名<br>
+解压就能用了：<br>
+cd idea-IU-181.4203.550/bin<br>
+./idea.sh</p>
+<p>#更新汇总<br>
+sudo apt-get update &amp;&amp; sudo apt-get upgrade &amp;&amp; sudo apt-get dist-upgrade</p>
+<p>#安装elementary-tweaks<br>
+sudo apt install software-properties-common<br>
+sudo add-apt-repository ppa:philip.scott/elementary-tweaks<br>
+sudo apt install elementary-tweaks</p>
+<p>#grub配置timeout<br>
+sudo vim /etc/default/grub   #timeout改成3s<br>
+sudo update-grub</p>
 
                 </div>
             </article>
@@ -77,16 +149,16 @@
         <div class="mdui-container">
             <div class="mdui-row">
                 
-                <a href="http://lkurococ.top/ElementaryOSNotes/" class="mdui-ripple mdui-color-theme mdui-col-xs-2 mdui-col-sm-6 doc-footer-nav-left">
+                <div class="mdui-col-xs-2 mdui-col-sm-6 doc-footer-nav-left"></div>
+                
+                
+                <a href="http://lkurococ.top/hello-gridea/" class="mdui-ripple mdui-color-theme mdui-col-xs-10 mdui-col-sm-6 doc-footer-nav-right">
                     <div class="doc-footer-nav-text">
-                        <i class="mdui-icon material-icons">arrow_back</i>
-                        <span class="doc-footer-nav-direction mdui-hidden-xs-down">上一篇文章</span>
-                        <div class="doc-footer-nav-chapter mdui-hidden-xs-down">Elementary OS折腾笔记</div>
+                        <i class="mdui-icon material-icons">arrow_forward</i>
+                        <span class="doc-footer-nav-direction">下一篇文章</span>
+                        <div class="doc-footer-nav-chapter">Hello Gridea</div>
                     </div>
                 </a>
-                
-                
-                <div class="mdui-col-xs-2 mdui-col-sm-6 doc-footer-nav-left"></div>
                 
             </div>
         </div>
