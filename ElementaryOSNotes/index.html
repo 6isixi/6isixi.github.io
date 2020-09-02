@@ -47,21 +47,21 @@
                     <hr>
                 </header>
                 <div class="neko">
-                    <p>#全局 su权限执行：<br>
-sudo su<br>
-#更新源：<br>
-sudo apt update<br>
+                    <h2 id="全局-su权限执行">全局 su权限执行：</h2>
+<p>sudo su</p>
+<h2 id="更新源">更新源：</h2>
+<p>sudo apt update<br>
 sudo apt install software-properties-common software-properties-gtk<br>
 打开软件更新管理器:<br>
-sudo software-properties-gtk<br>
-#更新apt列表：<br>
-sudo apt update<br>
-sudo apt-get update<br>
-#更新已安装apt包：<br>
-sudo apt upgrade<br>
-sudo apt-get upgrade<br>
-#换国内源 阿里源 网易163源 中科大源：<br>
-cd /etc/apt/<br>
+sudo software-properties-gtk</p>
+<h2 id="更新apt列表">更新apt列表：</h2>
+<p>sudo apt update<br>
+sudo apt-get update</p>
+<h2 id="更新已安装apt包">更新已安装apt包：</h2>
+<p>sudo apt upgrade<br>
+sudo apt-get upgrade</p>
+<h2 id="换国内源-阿里源-网易163源-中科大源">换国内源 阿里源 网易163源 中科大源：</h2>
+<p>cd /etc/apt/<br>
 sudo cp sources.list sources.list.bak<br>
 sudo vim sources.list<br>
 或者<br>
@@ -99,8 +99,8 @@ deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted univ
 deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse<br>
 deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse<br>
 ESC ：WQ保存执行更新apt</p>
-<p>#安装搜狗输入法：<br>
-sudo add-apt-repository ppa:fcitx-team/nightly<br>
+<h2 id="安装搜狗输入法">安装搜狗输入法：</h2>
+<p>sudo add-apt-repository ppa:fcitx-team/nightly<br>
 sudo apt-get update<br>
 http://pinyin.sogou.com/linux/下载安装包deb文件<br>
 sudo apt-get remove ibus   // 卸载ibus<br>
@@ -116,14 +116,14 @@ sudo apt-get remove ibus scim<br>
 sudo im-config -s fcitx -z default<br>
 sudo reboot now<br>
 sudo dpkg -i sogoupinyin.dep</p>
-<p>#JDK安装：<br>
-yum -y list java*<br>
+<h2 id="jdk安装">JDK安装：</h2>
+<p>yum -y list java*<br>
 选择一个版本：<br>
 yum install -y java-1.8.0-openjdk-devel.x86_64<br>
 查看版本：<br>
 java -version</p>
-<p>#安装idea：<br>
-https://www.jetbrains.com/idea/<br>
+<h2 id="安装idea">安装idea：</h2>
+<p>https://www.jetbrains.com/idea/<br>
 cd /usr/local<br>
 mkdir intellij<br>
 cd /usr/local/intellij<br>
@@ -131,14 +131,14 @@ tar –zxvf 包名<br>
 解压就能用了：<br>
 cd idea-IU-181.4203.550/bin<br>
 ./idea.sh</p>
-<p>#更新汇总<br>
-sudo apt-get update &amp;&amp; sudo apt-get upgrade &amp;&amp; sudo apt-get dist-upgrade</p>
-<p>#安装elementary-tweaks<br>
-sudo apt install software-properties-common<br>
+<h2 id="更新汇总">更新汇总</h2>
+<p>sudo apt-get update &amp;&amp; sudo apt-get upgrade &amp;&amp; sudo apt-get dist-upgrade</p>
+<h2 id="安装elementary-tweaks">安装elementary-tweaks</h2>
+<p>sudo apt install software-properties-common<br>
 sudo add-apt-repository ppa:philip.scott/elementary-tweaks<br>
 sudo apt install elementary-tweaks</p>
-<p>#grub配置timeout<br>
-sudo vim /etc/default/grub   #timeout改成3s<br>
+<h2 id="grub配置timeout">grub配置timeout</h2>
+<p>sudo vim /etc/default/grub   #timeout改成3s<br>
 sudo update-grub</p>
 
                 </div>
