@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://lkurococ.top</id>
     <title>LKurococ</title>
-    <updated>2020-09-02T00:20:05.706Z</updated>
+    <updated>2020-09-02T00:35:25.333Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://lkurococ.top"/>
     <link rel="self" href="http://lkurococ.top/atom.xml"/>
@@ -10,6 +10,53 @@
     <logo>http://lkurococ.top/images/avatar.png</logo>
     <icon>http://lkurococ.top/favicon.ico</icon>
     <rights>All rights reserved 2020, LKurococ</rights>
+    <entry>
+        <title type="html"><![CDATA[Manjaro折腾笔记]]></title>
+        <id>http://lkurococ.top/eXY4WhUFa/</id>
+        <link href="http://lkurococ.top/eXY4WhUFa/">
+        </link>
+        <updated>2020-09-02T00:28:20.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="对源进行排序">对源进行排序：</h2>
+<p>sudo pacman-mirrors -i -c China -m rank</p>
+<h2 id="查看manjaro信息">查看manjaro信息：</h2>
+<p>screenfetch</p>
+<h2 id="更换为为中科大arch软件源sudo-vim-etcpacmanconf">更换为为中科大arch软件源sudo vim /etc/pacman.conf：</h2>
+<p>[archlinuxcn]<br>
+SigLevel = Optional TrustedOnly<br>
+Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch</p>
+<h2 id="更新软件源">更新软件源：</h2>
+<p>sudo pacman -Syy &amp;&amp; sudo pacman -S archlinuxcn-keyring</p>
+<h2 id="常用pacman命令">常用pacman命令：</h2>
+<p>pacman -S  软件名   #安装<br>
+pacman -Syu    #更新<br>
+pacman -R 软件名    #移除</p>
+<h2 id="安装chrome">安装chrome：</h2>
+<p>sudo pacman -S google-chrome</p>
+<h2 id="安装截图">安装截图：</h2>
+<p>sudo pacman -S deepin-screenshot</p>
+<h2 id="安装tim">安装TIM：</h2>
+<p>sudo pacman -S deepin-wine-tim</p>
+<h2 id="安装网易云音乐">安装网易云音乐：</h2>
+<p>sudo pacman -S netease-cloud-music</p>
+<h2 id="安装搜狗输入法">安装搜狗输入法：</h2>
+<p>sudo pacman -S fcitx-im<br>
+sudo pacman -S fcitx-configtool<br>
+sudo pacman -S fcitx-sogoupinyin<br>
+添加输入法配置文件 sudo vim ~/.xprofile<br>
+export GTK_IM_MODULE=fcitx<br>
+export QT_IM_MODULE=fcitx<br>
+export XMODIFIERS=&quot;@im=fcitx&quot;</p>
+<h2 id="安装pdf阅读器">安装pdf阅读器：</h2>
+<p>sudo yaourt foxit</p>
+<h2 id="安装zsh">安装zsh：</h2>
+<p>最新版本已经默认安装了。<br>
+sudo pacman -S zsh<br>
+安装oh-my-zsh<br>
+sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;<br>
+更换默认的shell<br>
+chsh -s /bin/zsh</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Elementary OS折腾笔记]]></title>
         <id>http://lkurococ.top/ElementaryOSNotes/</id>
