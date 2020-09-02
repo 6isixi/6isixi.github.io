@@ -42,104 +42,14 @@
         <main id="main" class="site-main" role="main">
             <article id="post-1270" class="post-1270 post type-post status-publish format-standard hentry category-90 category-129 tag-149">
                 <header class="entry-header">
-                    <h1 class="entry-title">Elementary OS折腾笔记</h1>
-                    <p class="entry-census">发布于 2020-09-01</p>
+                    <h1 class="entry-title">关于我</h1>
+                    <p class="entry-census">发布于 2020-09-02</p>
                     <hr>
                 </header>
                 <div class="neko">
-                    <h2 id="全局-su权限执行">全局 su权限执行：</h2>
-<p>sudo su</p>
-<h2 id="更新源">更新源：</h2>
-<p>sudo apt update<br>
-sudo apt install software-properties-common software-properties-gtk<br>
-打开软件更新管理器:<br>
-sudo software-properties-gtk</p>
-<h2 id="更新apt列表">更新apt列表：</h2>
-<p>sudo apt update<br>
-sudo apt-get update</p>
-<h2 id="更新已安装apt包">更新已安装apt包：</h2>
-<p>sudo apt upgrade<br>
-sudo apt-get upgrade</p>
-<h2 id="换国内源-阿里源-网易163源-中科大源">换国内源 阿里源 网易163源 中科大源：</h2>
-<p>cd /etc/apt/<br>
-sudo cp sources.list sources.list.bak<br>
-sudo vim sources.list<br>
-或者<br>
-sudo vi sources.list</p>
-<p>阿里源：<br>
-deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse<br>
-deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse<br>
-deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse<br>
-deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse<br>
-deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse<br>
-deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse<br>
-deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse<br>
-deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse<br>
-deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse<br>
-网易源：<br>
-deb http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse<br>
-deb http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse<br>
-deb http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse<br>
-deb http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse<br>
-deb http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse<br>
-deb-src http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse<br>
-deb-src http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse<br>
-deb-src http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse<br>
-deb-src http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse<br>
-deb-src http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse<br>
-中科大：<br>
-deb https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse<br>
-deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse<br>
-deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse<br>
-deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse<br>
-deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse<br>
-deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse<br>
-deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse<br>
-deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse<br>
-deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse<br>
-deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse<br>
-ESC ：WQ保存执行更新apt</p>
-<h2 id="安装搜狗输入法">安装搜狗输入法：</h2>
-<p>sudo add-apt-repository ppa:fcitx-team/nightly<br>
-sudo apt-get update<br>
-http://pinyin.sogou.com/linux/下载安装包deb文件<br>
-sudo apt-get remove ibus   // 卸载ibus<br>
-sudo apt-get remove scim<br>
-sudo apt-get autoremove   // 删除依赖包<br>
-sudo apt-get -f install   // 修正安装过程中出现的依赖性关系<br>
-sudo apt-get install fcitx<br>
-sudo apt --fix-broken install<br>
-sudo apt-get update --fix missing<br>
-sudo apt-get -f install<br>
-sudo apt install fcitx-googlepinyin<br>
-sudo apt-get remove ibus scim<br>
-sudo im-config -s fcitx -z default<br>
-sudo reboot now<br>
-sudo dpkg -i sogoupinyin.dep</p>
-<h2 id="jdk安装">JDK安装：</h2>
-<p>yum -y list java*<br>
-选择一个版本：<br>
-yum install -y java-1.8.0-openjdk-devel.x86_64<br>
-查看版本：<br>
-java -version</p>
-<h2 id="安装idea">安装idea：</h2>
-<p>https://www.jetbrains.com/idea/<br>
-cd /usr/local<br>
-mkdir intellij<br>
-cd /usr/local/intellij<br>
-tar –zxvf 包名<br>
-解压就能用了：<br>
-cd idea-IU-181.4203.550/bin<br>
-./idea.sh</p>
-<h2 id="更新汇总">更新汇总</h2>
-<p>sudo apt-get update &amp;&amp; sudo apt-get upgrade &amp;&amp; sudo apt-get dist-upgrade</p>
-<h2 id="安装elementary-tweaks">安装elementary-tweaks</h2>
-<p>sudo apt install software-properties-common<br>
-sudo add-apt-repository ppa:philip.scott/elementary-tweaks<br>
-sudo apt install elementary-tweaks</p>
-<h2 id="grub配置timeout">grub配置timeout</h2>
-<p>sudo vim /etc/default/grub   #timeout改成3s<br>
-sudo update-grub</p>
+                    <p>一名正在学习Java的一名大二学生<br>
+<s>喜欢干些没名堂的事</s></p>
+<p>主要使用Windows，正在折腾Manjaro和Elementary OS，尝试过Chrome OS和Fyde OS(基于Chromium OS开发)和Debian系的Deepin、UOS、Mint和Ubuntu，未来预期尝试MacOS😁</p>
 
                 </div>
             </article>
@@ -152,13 +62,7 @@ sudo update-grub</p>
                 <div class="mdui-col-xs-2 mdui-col-sm-6 doc-footer-nav-left"></div>
                 
                 
-                <a href="http://lkurococ.top/hello-gridea/" class="mdui-ripple mdui-color-theme mdui-col-xs-10 mdui-col-sm-6 doc-footer-nav-right">
-                    <div class="doc-footer-nav-text">
-                        <i class="mdui-icon material-icons">arrow_forward</i>
-                        <span class="doc-footer-nav-direction">下一篇文章</span>
-                        <div class="doc-footer-nav-chapter">Hello Gridea</div>
-                    </div>
-                </a>
+                <div class="mdui-col-xs-2 mdui-col-sm-6 doc-footer-nav-left"></div>
                 
             </div>
         </div>
