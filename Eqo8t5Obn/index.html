@@ -42,50 +42,17 @@
         <main id="main" class="site-main" role="main">
             <article id="post-1270" class="post-1270 post type-post status-publish format-standard hentry category-90 category-129 tag-149">
                 <header class="entry-header">
-                    <h1 class="entry-title">Manjaro折腾笔记</h1>
-                    <p class="entry-census">发布于 2020-09-02</p>
+                    <h1 class="entry-title">WindowsPowerShell 修复系统</h1>
+                    <p class="entry-census">发布于 2020-09-06</p>
                     <hr>
                 </header>
                 <div class="neko">
-                    <h2 id="对源进行排序">对源进行排序：</h2>
-<p>sudo pacman-mirrors -i -c China -m rank</p>
-<h2 id="查看manjaro信息">查看manjaro信息：</h2>
-<p>screenfetch</p>
-<h2 id="更换为为中科大arch软件源sudo-vim-etcpacmanconf">更换为为中科大arch软件源sudo vim /etc/pacman.conf：</h2>
-<p>[archlinuxcn]<br>
-SigLevel = Optional TrustedOnly<br>
-Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch</p>
-<h2 id="更新软件源">更新软件源：</h2>
-<p>sudo pacman -Syy &amp;&amp; sudo pacman -S archlinuxcn-keyring</p>
-<h2 id="常用pacman命令">常用pacman命令：</h2>
-<p>pacman -S  软件名   #安装<br>
-pacman -Syu    #更新<br>
-pacman -R 软件名    #移除</p>
-<h2 id="安装chrome">安装chrome：</h2>
-<p>sudo pacman -S google-chrome</p>
-<h2 id="安装截图">安装截图：</h2>
-<p>sudo pacman -S deepin-screenshot</p>
-<h2 id="安装tim">安装TIM：</h2>
-<p>sudo pacman -S deepin-wine-tim</p>
-<h2 id="安装网易云音乐">安装网易云音乐：</h2>
-<p>sudo pacman -S netease-cloud-music</p>
-<h2 id="安装搜狗输入法">安装搜狗输入法：</h2>
-<p>sudo pacman -S fcitx-im<br>
-sudo pacman -S fcitx-configtool<br>
-sudo pacman -S fcitx-sogoupinyin<br>
-添加输入法配置文件 sudo vim ~/.xprofile<br>
-export GTK_IM_MODULE=fcitx<br>
-export QT_IM_MODULE=fcitx<br>
-export XMODIFIERS=&quot;@im=fcitx&quot;</p>
-<h2 id="安装pdf阅读器">安装pdf阅读器：</h2>
-<p>sudo yaourt foxit</p>
-<h2 id="安装zsh">安装zsh：</h2>
-<p>最新版本已经默认安装了。<br>
-sudo pacman -S zsh<br>
-安装oh-my-zsh<br>
-sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;<br>
-更换默认的shell<br>
-chsh -s /bin/zsh</p>
+                    <p>sfc /SCANNOW<br>
+Dism /Online /Cleanup-Image /ScanHealth<br>
+Dism /Online /Cleanup-Image /CheckHealth<br>
+DISM /Online /Cleanup-image /RestoreHealth<br>
+shutdown -r -f -t 0<br>
+sfc /SCANNOW</p>
 
                 </div>
             </article>
@@ -98,7 +65,13 @@ chsh -s /bin/zsh</p>
                 <div class="mdui-col-xs-2 mdui-col-sm-6 doc-footer-nav-left"></div>
                 
                 
-                <div class="mdui-col-xs-2 mdui-col-sm-6 doc-footer-nav-left"></div>
+                <a href="http://lkurococ.top/ElementaryOSNotes/" class="mdui-ripple mdui-color-theme mdui-col-xs-10 mdui-col-sm-6 doc-footer-nav-right">
+                    <div class="doc-footer-nav-text">
+                        <i class="mdui-icon material-icons">arrow_forward</i>
+                        <span class="doc-footer-nav-direction">下一篇文章</span>
+                        <div class="doc-footer-nav-chapter">Elementary OS折腾笔记</div>
+                    </div>
+                </a>
                 
             </div>
         </div>
